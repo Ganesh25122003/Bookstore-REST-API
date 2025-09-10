@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Bookstore</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+ <header>
+  <h1>Bookstore</h1>
+  <p>Manage books — add, edit, delete, view</p>
+</header>
+
+  <main>
+    <section class="form-section">
+      <h2 id="form-title">Add New Book</h2>
+      <form id="book-form">
+        <input type="hidden" id="book-id" value="">
+        <label>Title</label>
+        <input type="text" id="title" required>
+        <label>Author</label>
+        <input type="text" id="author" required>
+        <label>Price</label>
+        <input type="number" id="price" step="0.01" required>
+        <div class="buttons">
+          <button type="submit" id="submit-btn">Add Book</button>
+          <button type="button" id="cancel-btn" style="display:none">Cancel</button>
+        </div>
+      </form>
+      <p id="msg" class="msg"></p>
+    </section>
+
+    <section class="list-section">
+      <h2>Books</h2>
+      <input type="text" id="search" placeholder="Search by title or author..." />
+      <div id="books-list"></div>
+    </section>
+  </main>
+
+  <script src="{{ url_for('static', filename='main.js') }}"></script>
+</body>
+</html>

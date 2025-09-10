@@ -1,0 +1,148 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f9fbfd, #eef2f7);
+  margin: 0;
+  padding: 0;
+  color: #222;
+}
+
+header {
+  background: linear-gradient(135deg, #07213d, #024cb3);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+main {
+  display: flex;
+  gap: 24px;
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 0 16px;
+}
+
+.form-section, .list-section {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease-in-out;
+}
+
+.form-section:hover, .list-section:hover {
+  transform: translateY(-3px);
+}
+
+.form-section { width: 340px; }
+.list-section { flex: 1; }
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: 600;
+  color: #333;
+}
+
+input[type="text"], input[type="number"], #search {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus, #search:focus {
+  border-color: #0b3f77;
+  box-shadow: 0 0 6px rgba(0, 123, 255, 0.4);
+  outline: none;
+}
+
+.buttons {
+  margin-top: 16px;
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  padding: 10px 14px;
+  border: none;
+  background: #007bff;
+  color: white;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background: #0056b3;
+  transform: translateY(-2px);
+}
+
+button#cancel-btn {
+  background: #6c757d;
+}
+
+button#cancel-btn:hover {
+  background: #5a6268;
+}
+
+.msg {
+  margin-top: 12px;
+  color: green;
+  font-weight: 600;
+}
+
+.book-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 8px;
+  border-bottom: 1px solid #eee;
+  background: #fdfdfd;
+  border-radius: 6px;
+  transition: background 0.2s ease;
+}
+
+.book-item:hover {
+  background: #f0f7ff;
+}
+
+.book-details {
+  flex: 1;
+  font-size: 15px;
+  color: #333;
+}
+
+.book-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.btn-small {
+  padding: 6px 10px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  background: #17a2b8;
+  color: white;
+  border: none;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-small:hover {
+  background: #117a8b;
+  transform: translateY(-2px);
+}
+
+.btn-delete {
+  background: #dc3545;
+}
+
+.btn-delete:hover {
+  background: #c82333;
+}
